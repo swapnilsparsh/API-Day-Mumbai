@@ -4,6 +4,11 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [preloader, setPreloader] = useState(true);
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+  const [email, setEmail] = useState('');
 
   useEffect(() => {
     setTimeout(() => {
@@ -11,10 +16,6 @@ export default function Home() {
     }, 4000);
   }, []);
 
-  const [days, setDays] = useState(0);
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
 
   const calculateTime = () => {
     const dday = 1680582600000;
@@ -34,6 +35,10 @@ export default function Home() {
     setMinutes(minutes);
     setSeconds(seconds);
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -94,10 +99,10 @@ export default function Home() {
         </div>
 
       </div>
-        <div className="max-w-2xl flex bg-white m-auto p-1 mx-3 md:m-auto rounded-full">
-          <input type="email" placeholder="Email" className=" flex-1 outline-none ml-5 text-black"  />
-          <button className="px-8 py-2 bg-primary rounded-full">Subscribe</button>
-        </div>
+        <form onSubmit={(e)=>handleSubmit(e)} className="max-w-2xl flex bg-white m-auto p-1 mx-3 md:m-auto rounded-full">
+          <input required type="email" value={email} onChange={(e)=> setEmail(e.target.value)} placeholder="Email" className="w-3/5 outline-none ml-5 text-black"  />
+          <button type="submit" className="w-2/5 px-8 py-2 bg-primary rounded-full">Subscribe</button>
+        </form>
     </>
   );
 }
