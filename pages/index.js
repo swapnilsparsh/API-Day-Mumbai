@@ -47,9 +47,9 @@ export default function Home() {
 
   return (
     <>
-      {/* <div className={`${preloader ? "fixed" : "hidden"}`}>
+      <div className={`${preloader ? "fixed" : "hidden"}`}>
         <Preloader />
-      </div> */}
+      </div>
 
       <div className="md:pt-20 pt-5 pb-10 flex max-w-7xl m-auto max-md:flex-col-reverse">
         <div className="md:w-4/6 md:p-16 p-5 ">
