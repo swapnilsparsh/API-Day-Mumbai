@@ -15,9 +15,31 @@ export default function Home() {
     }, 3900);
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(email);
+    const url = 'https://postmanemailcollector-production.up.railway.app/submit';
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: `{
+        "email": "${email}",
+      }`
+      });
+      if (response.status === 200) {
+        const data = await response.json()
+        console.log(">>" + data)
+      } else {
+      }
+    } catch (_) {
+      return {
+        err: "error"
+      }
+    }
+    console.log(data);
   };
 
   return (
