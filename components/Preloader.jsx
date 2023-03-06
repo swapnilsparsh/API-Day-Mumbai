@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Preloader = () => {
   return (
-    <div className="bg-secondary w-screen h-screen flex justify-center items-center">
+    <div className="bg-background fixed !z-50 w-screen h-screen flex justify-center items-center">
       <div className="flex p-1">
         <div className="text-right flex flex-col justify-center">
           <h2 className="font-bold text-xl md:text-2xl">API SUMMIT 2023</h2>
