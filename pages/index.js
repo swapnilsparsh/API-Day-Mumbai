@@ -57,47 +57,37 @@ export default function Home() {
         <Preloader />
       </div>
 
-      <div className="md:pt-20 pt-5 pb-10 flex max-w-7xl m-auto max-md:flex-col-reverse">
+      <div className="md:pt-20 pt-5 pb-10 flex max-w-8xl m-auto max-md:flex-col-reverse justify-center">
         <div className="md:w-4/6 md:p-16 p-5 ">
-          <h2 className="font-bold md:text-6xl text-3xl">API SUMMIT 2023</h2>
-          <h2 className=" text-3xl italic">MUMBAI</h2>
+          <h2 className=" md:text-8xl text-3xl text-center font-robo font-normal bg-gradient-to-r from-red to-primary text-transparent bg-clip-text">API Summit 2023</h2>
+          <h2 className="md:text-4xl text-3xl text-center font-robo font-normal pt-20">April 18th, Mumbai, India</h2>
 
-          <div className="countdowns flex mt-28 max-md:mt-10 max-md:justify-between">
-            <div className="countdown text-center mr-5 flex flex-col flex-1 ">
-              <span className="md:text-8xl text-3xl font-bold md:px-5 p-3 md:pb-3 rounded-lg  bg-primary">
+          <div className="countdowns flex mt-28 max-md:mt-10 max-md:justify-center justify-center">
+            <div className="countdown text-center mr-5 flex flex-col">
+              <span className="md:text-8xl w-full text-3xl font-bold md:px-5 p-3 md:pb-3 rounded-lg bg-gradient-to-b from-primary to-red">
                 {days > 9 ? days : `0${days}`}
               </span>
-              <p className="uppercase mt-2">Days</p>
+              <p className="uppercase mt-2 font-robo">Days</p>
             </div>
-            <div className="countdown text-center mr-5 flex flex-col flex-1">
-              <span className="md:text-8xl text-3xl font-bold md:px-5 p-3 md:pb-3 rounded-lg  bg-primary">
+            <div className="countdown text-center mr-5 flex flex-col ">
+              <span className="md:text-8xl w-full text-3xl font-bold md:px-5 p-3 md:pb-3 rounded-lg bg-gradient-to-b from-primary to-red">
                 {hours > 9 ? hours : `0${hours}`}
               </span>
-              <p className="uppercase mt-2">Hours</p>
+              <p className="uppercase mt-2 font-robo">Hours</p>
             </div>
-            <div className="countdown text-center mr-5 flex flex-col flex-1">
-              <span className="md:text-8xl text-3xl font-bold md:px-5 p-3 md:pb-3 rounded-lg  bg-primary">
+            <div className="countdown text-center mr-5 flex flex-col">
+              <span className="md:text-8xl w-full text-3xl font-bold md:px-5 p-3 md:pb-3 rounded-lg bg-gradient-to-b from-primary to-red">
                 {minutes > 9 ? minutes : `0${minutes}`}
               </span>
-              <p className="uppercase mt-2">Minutes</p>
+              <p className="uppercase mt-2 font-robo">Minutes</p>
             </div>
-            <div className="countdown text-center flex flex-col flex-1">
-              <span className="md:text-8xl text-3xl font-bold md:px-5 p-3 md:pb-3 rounded-lg  bg-primary">
+            <div className="countdown text-center flex flex-col">
+              <span className="md:text-8xl w-full text-3xl font-bold md:px-5 p-3 md:pb-3 rounded-lg bg-gradient-to-b from-primary to-red">
                 {seconds > 9 ? seconds : `0${seconds}`}
               </span>
-              <p className="uppercase mt-2">Seconds</p>
+              <p className="uppercase mt-2 font-robo">Seconds</p>
             </div>
           </div>
-
-        </div>
-        <div className="md:w-2/6 w-2/3 m-auto max-md:p-5 ">
-          <Image
-            className="my-auto"
-            src={"/logo.png"}
-            width={400}
-            height={400}
-            alt={"logo"}
-          />
         </div>
       </div>
 
@@ -115,7 +105,7 @@ export default function Home() {
         />
         <button
           type="submit"
-          className="w-2/5 px-8 py-2 bg-primary rounded-full"
+          className="w-3/5 px-3 py-2 bg-gradient-to-b from-red to-primary rounded-full font-robo"
         >
           Subscribe
         </button>

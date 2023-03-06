@@ -1,3 +1,6 @@
+/* Global fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,28 +36,36 @@ body {
   0% {
     transform: translateY(-294%);
   }
+
   25% {
     transform: translateY(-300%);
   }
+
   35% {
     transform: translateY(-194%);
   }
+
   50% {
     transform: translateY(-200%);
   }
+
   60% {
     transform: translateY(-94%);
   }
+
   75% {
     transform: translateY(-100%);
   }
+
   85% {
     transform: translateY(6%);
   }
+
   100% {
     transform: translateY(0%);
   }
 }
+
 /* @keyframes t-rotate {
   0% {
     transform: translateY(-6%);
