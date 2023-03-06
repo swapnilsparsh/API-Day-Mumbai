@@ -18,7 +18,7 @@ const Preloader = () => {
         <div className="words max-h-28 overflow-hidden  ">
           <div className="block text-rotate h-full max-md:text-xl text-2xl px-2 ">
             <div className="flex items-center h-full font-bold text-white ">
-              <p className="p-3 bg-gradient-to-b from-primary to-red italic uppercase -skew-x-12 font-robo">
+              <p className="p-3 bg-primary italic uppercase -skew-x-12 font-robo">
                 {" "}
                 Lets Summit !
               </p>

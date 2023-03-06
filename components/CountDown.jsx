@@ -1,3 +1,4 @@
+import Script from "next/script";
 import React, { useEffect, useState } from "react";
 
 const CountDown = () => {
@@ -37,40 +38,70 @@ const CountDown = () => {
   }, []);
   return (
     <>
-      <div class="container !z-0 text-4xl py-10 ">
-        <div class="container-segment  ">
-
-          <div class="flip-card" data-days-tens>
-            <div class="top">{days > 9 ? days : `0${days}`}</div>
-            <div class="bottom">{days > 9 ? days : `0${days}`}</div>
+    <Script src="/countdownSrc.js" />
+      <div className="container !z-0 text-4xl py-10 ">
+        <div className="container-segment">
+          <div className="flip-card" data-days>
+            <div className="top ">{days > 9 ? days : `0${days}`}</div>
+            <div className="bottom ">{days > 9 ? days : `0${days}`}</div>
           </div>
-          <div class="segment-title">Days</div>
+          <div className="segment-title">Days</div>
         </div>
-        <div class="container-segment ">
+        <div className="container-segment ">
 
-          <div class="flip-card" data-hours-tens>
-            <div class="top">{hours > 9 ? hours : `0${hours}`}</div>
-            <div class="bottom">{hours > 9 ? hours : `0${hours}`}</div>
+          <div className="flip-card" data-hours>
+            <div className="top"></div>
+            <div className="bottom"></div>
           </div>
-          <div class="segment-title">Hours</div>
+          <div className="segment-title">Hours</div>
         </div>
-        <div class="container-segment ">
+        <div className="container-segment ">
 
-          <div class="flip-card" data-minutes-tens>
-            <div class="top">{minutes > 9 ? minutes : `0${minutes}`}</div>
-            <div class="bottom">{minutes > 9 ? minutes : `0${minutes}`}</div>
+          <div className="flip-card" data-minutes>
+            <div className="top"></div>
+            <div className="bottom"></div>
           </div>
-          <div class="segment-title">Minutes</div>
+          <div className="segment-title">Minutes</div>
         </div>
-        <div class="container-segment ">
+        <div className="container-segment ">
 
-          <div class="flip-card" data-seconds-tens>
-            <div class="top">{seconds > 9 ? seconds : `0${seconds}`}</div>
-            <div class="bottom">{seconds > 9 ? seconds : `0${seconds}`}</div>
+          <div className="flip-card" data-seconds>
+            <div className="top"></div>
+            <div className="bottom"></div>
           </div>
-          <div class="segment-title">Seconds</div>
+          <div className="segment-title">Seconds</div>
         </div>
       </div>
+
+{/* <div class="container !z-0 text-4xl py-10">
+    <div class="container-segment">
+      <div class="segment-title">Hours</div>
+      <div class="segment">
+        <div class="flip-card" data-hours-tens>
+          <div class="top">2</div>
+          <div class="bottom">2</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-segment">
+      <div class="segment-title">Minutes</div>
+      <div class="segment">
+        <div class="flip-card" data-minutes-tens>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-segment">
+      <div class="segment-title">Seconds</div>
+      <div class="segment">
+        <div class="flip-card" data-seconds-tens>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+      </div>
+    </div>
+  </div> */}
     </>
   );
 };
