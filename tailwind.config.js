@@ -6,6 +6,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      robo: ["Roboto Mono", "monospace"],
+    },
     extend: {
       colors: {
         primary: "#FF5733",
