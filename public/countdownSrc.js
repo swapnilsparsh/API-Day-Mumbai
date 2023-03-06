@@ -6,23 +6,33 @@ setInterval(() => {
     flipAllCards(timeBetweenDates)
   
     previousTimeBetweenDates = timeBetweenDates
-}, 250)
+}, 1000)
 
 function flipAllCards(time) {
-  const seconds = time % 60
-  const minutes = Math.floor(time / 60) % 60
-  const hours = Math.floor(time / 3600) % 24
+  let seconds = time % 60;
+  let minutes = Math.floor(time / 60) % 60;
+  let hours = Math.floor(time / 3600) % 24;
+  
 
   flip(document.querySelector("[data-hours]"), Math.floor(hours))
   flip(document.querySelector("[data-minutes]"), Math.floor(minutes))
   flip(document.querySelector("[data-seconds]"), Math.floor(seconds))
 }
 
-function flip(flipCard, newNumber) {
+function flip(flipCard, num) {
   const topHalf = flipCard.querySelector(".top")
-  const startNumber = parseInt(topHalf.textContent)
-  if (newNumber === startNumber) return
+  let startNumber = parseInt(topHalf.textContent)
+  if (num === startNumber) return
 
+  let newNumber = num;
+
+  if(newNumber < 10) {
+    newNumber = `0${newNumber}`
+  }
+  if(startNumber < 10) {
+    startNumber = `0${startNumber}`
+  }
+ 
   const bottomHalf = flipCard.querySelector(".bottom")
   const topFlip = document.createElement("div")
   topFlip.classList.add("top-flip")

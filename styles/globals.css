@@ -46,6 +46,9 @@ body {
   animation: t-rotate 4s infinite;
 }
 
+.half-bg {
+  background: linear-gradient(180deg,#1B1D24 50%, #232531 50%);
+} 
 
 @keyframes t-rotate {
   0% {
