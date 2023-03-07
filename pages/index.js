@@ -25,9 +25,7 @@ export default function Home() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: `{
-        "email": "${email}",
-      }`
+        body: JSON.stringify({ email }),
       });
       if (response.status === 200) {
         const data = await response.json()
