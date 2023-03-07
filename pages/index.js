@@ -53,7 +53,7 @@ export default function Home() {
           <p className="md:text-4xl text-lg py-10">April 15th, Mumbai, India</p>
         </div>
 
-        <p className="text-center md:text-xl pb-3">Website live in</p>
+        <p className="text-center md:text-xl pb-3">Website live in </p>
         <CountDown />
 
         <form
