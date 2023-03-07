@@ -18,26 +18,23 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(email);
-    const url = 'https://postmanemailcollector-production.up.railway.app/submit';
+    const url =
+      "https://postmanemailcollector-production.up.railway.app/submit";
     try {
       const response = await fetch(url, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ email }),
       });
       if (response.status === 200) {
-        const data = await response.json()
-        console.log(">>" + data)
+        const data = await response.json();
       } else {
       }
-    } catch (_) {
-      return {
-        err: "error"
-      }
+    } catch (err) {
+      console.log("something went wrong");
     }
-    console.log(data);
   };
 
   return (

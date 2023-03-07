@@ -20,7 +20,7 @@ const Preloader = () => {
             <div className="flex items-center h-full font-bold text-white ">
               <p className="p-3 bg-primary italic uppercase -skew-x-12 font-robo">
                 {" "}
-                Lets Summit !
+                Lets Summit!
               </p>
             </div>
           </div>
