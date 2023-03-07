@@ -66,7 +66,7 @@ export default function Home() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
-            className="w-3/5 outline-none p-2 ml-5 text-black"
+            className="w-3/5 outline-none p-2 ml-5  text-black"
           />
           <button
             type="submit"
