@@ -8,7 +8,7 @@ const CountDown = () => {
   const [seconds, setSeconds] = useState(0);
 
   const calculateTime = () => {
-    const dday = 1681792200000;
+    const dday = 1678818600000;
     const currentTime = Date.now();
 
     if (dday - currentTime < 0) return;
@@ -39,7 +39,7 @@ const CountDown = () => {
   return (
     <>
     <Script src="/countdownSrc.js" />
-      <div className="container !z-0 text-4xl py-10 ">
+      <div className="container !z-0 text-4xl pb-10  ">
         <div className="container-segment">
           <div className="flip-card" data-days>
             <div className="top ">{days > 9 ? days : `0${days}`}</div>

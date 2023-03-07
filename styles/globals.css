@@ -12,6 +12,10 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
 :root {
   --primary: #ff6c37;
   --secondary: #c70039;
