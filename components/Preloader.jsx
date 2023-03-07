@@ -11,7 +11,7 @@ const Preloader = () => {
           <h2 className="font-semibold text-xl md:text-2xl italic font-robo">
             MUMBAI
           </h2>
-          <p className=" font-robo">18 April 2023</p>
+          <p className=" font-robo">15 April 2023</p>
         </div>
         <div className="h-auto mx-5 w-1 bg-white"></div>
 
