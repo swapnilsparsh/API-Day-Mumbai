@@ -3,12 +3,9 @@ import React, { useEffect, useState } from "react";
 
 const CountDown = () => {
   const [days, setDays] = useState(0);
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
 
   const calculateTime = () => {
-    const dday = 1678818600000;
+    const dday = 1679250600000;
     const currentTime = Date.now();
 
     if (dday - currentTime < 0) return;

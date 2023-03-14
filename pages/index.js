@@ -1,8 +1,5 @@
 import Preloader from "@/components/Preloader";
-import Image from "next/image";
 import { useEffect, useState } from "react";
-import FlipCountdown from "@rumess/react-flip-countdown";
-import Script from "next/script";
 import CountDown from "@/components/CountDown";
 
 export default function Home() {
@@ -43,14 +40,12 @@ export default function Home() {
         <Preloader />
       </div>
 
-      <Script src="" />
-
       <div className="h-screen bg-[url('/bg-stars.svg')]">
         <div className="text-center pt-40">
           <h1 className="gradient-text md:text-8xl montserrat text-4xl font-bold">
             API DAY 2023
           </h1>
-          <p className="md:text-4xl text-lg py-10">April 15th, Mumbai, India</p>
+          <p className="md:text-4xl text-lg py-10">April 30th, Mumbai, India</p>
         </div>
 
         <p className="text-center md:text-xl pb-3">Website live in </p>
