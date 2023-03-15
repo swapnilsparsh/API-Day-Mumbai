@@ -13,15 +13,7 @@ const CountDown = () => {
     const time = new Date(dday - currentTime);
 
     let days = (dday - currentTime) / (1000 * 60 * 60 * 24);
-
-    let hours = time.getHours();
-    let minutes = time.getMinutes();
-    let seconds = time.getSeconds();
-
     setDays(Math.floor(days));
-    setHours(hours);
-    setMinutes(minutes);
-    setSeconds(seconds);
   };
 
   useEffect(() => {

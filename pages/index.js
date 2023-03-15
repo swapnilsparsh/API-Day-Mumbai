@@ -1,6 +1,7 @@
 import Preloader from "@/components/Preloader";
 import { useEffect, useState } from "react";
 import CountDown from "@/components/CountDown";
+import Sponsors from "@/section/Sponsors";
 
 export default function Home() {
   const [preloader, setPreloader] = useState(true);
@@ -75,8 +76,7 @@ export default function Home() {
 
       </div>
 
-      {/* <div className="h-screen"></div> */}
-
+      {/* <Sponsors/> */}
 
     </>
   );

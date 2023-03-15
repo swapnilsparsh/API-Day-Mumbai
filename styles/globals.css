@@ -1,5 +1,5 @@
 /* Global fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,11 +9,23 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 .montserrat {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+h4 {
+  font-size: 28px;
 }
 
 :root {
@@ -50,9 +62,15 @@ body {
   animation: t-rotate 4s infinite;
 }
 
-.half-bg {
-  background: linear-gradient(180deg,#1B1D24 50%, #232531 50%);
-} 
+.grey-img {
+  filter: grayscale(100%);
+}
+
+.grey-img:hover {
+  filter: grayscale(0%);
+}
+
+
 
 @keyframes t-rotate {
   0% {
@@ -88,29 +106,17 @@ body {
   }
 }
 
-/* @keyframes t-rotate {
-  0% {
-    transform: translateY(-6%);
+/* Small Screens */
+@media screen and (max-width: 768) {
+  h2 {
+    font-size: 40px;
   }
-  25% {
-    transform: translateY(0%);
+
+  h3 {
+    font-size: 32px;
   }
-  35% {
-    transform: translateY(-106%);
+
+  h4 {
+    font-size: 24px;
   }
-  50% {
-    transform: translateY(-100%);
-  }
-  60% {
-    transform: translateY(-206%);
-  }
-  75% {
-    transform: translateY(-200%);
-  }
-  85% {
-    transform: translateY(-306%);
-  }
-  100% {
-    transform: translateY(-300%);
-  }
-} */
+}
