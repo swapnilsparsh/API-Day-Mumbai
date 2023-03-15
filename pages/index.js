@@ -76,7 +76,7 @@ export default function Home() {
 
       </div>
 
-      {/* <Sponsors/> */}
+      {/* <Sponsors/>  */}
 
     </>
   );
