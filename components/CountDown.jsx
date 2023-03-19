@@ -10,8 +10,6 @@ const CountDown = () => {
 
     if (dday - currentTime < 0) return;
 
-    const time = new Date(dday - currentTime);
-
     let days = (dday - currentTime) / (1000 * 60 * 60 * 24);
     setDays(Math.floor(days));
   };
