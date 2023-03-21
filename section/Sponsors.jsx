@@ -1,21 +1,54 @@
+import Title from "@/components/Title";
+import Image from "next/image";
+
 const Sponsors = () => {
   return (
     <>
       <section className="sponsorship">
-        <div className="p-10 py-20 flex flex-col md:flex-row max-w-6xl m-auto">
-          <div className="md:w-1/2">
-            <h2 className="md:pl-16 pb-5">Sponsors</h2>
-            <div className="gradient-bg h-0.5 w-24"></div>
-          </div>
-          <div className="md:w-1/2">
-            <br />
-            <br />
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis atque illo eaque optio quasi. Omnis porro temporibus neque? Adipisci consequatur </p>
-          </div>
+        <Title
+          title={"Sponsors"}
+          description={
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis atque illo eaque optio quasi. Omnis porro temporibus neque? Adipisci consequatur"
+          }
+        />
+
+        <div className="flex flex-wrap gap-5 max-w-6xl m-auto p-6 justify-around">
+          <Image
+            className="grey-img max-md:p-5 md:w-1/3 md:mb-10"
+            src={"/postman-logo.png"}
+            width={500}
+            height={500}
+            alt={"sponsors logo"}
+          />
+          <Image
+            className="grey-img max-md:p-5 md:w-1/3 md:mb-10"
+            src={"/postman-logo.png"}
+            width={500}
+            height={500}
+            alt={"sponsors logo"}
+          />
+          <Image
+            className="grey-img max-md:p-5 md:w-1/3 md:mb-10"
+            src={"/postman-logo.png"}
+            width={500}
+            height={500}
+            alt={"sponsors logo"}
+          />
+          <Image
+            className="grey-img max-md:p-5 md:w-1/3 md:mb-10"
+            src={"/postman-logo.png"}
+            width={500}
+            height={500}
+            alt={"sponsors logo"}
+          />
+          <Image
+            className="grey-img max-md:p-5 md:w-1/3 md:mb-10"
+            src={"/postman-logo.png"}
+            width={500}
+            height={500}
+            alt={"sponsors logo"}
+          />
         </div>
-
-        
-
       </section>
     </>
   );
