@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import CountDown from "@/components/CountDown";
 import Sponsors from "@/section/Sponsors";
 import Speakers from "@/section/Speakers";
+import Hero from "@/section/Hero";
+import Footer from "@/section/Footer";
 
 export default function Home() {
   const [preloader, setPreloader] = useState(true);
@@ -77,11 +79,16 @@ export default function Home() {
 
       </div>
 
+      <Hero/>
 
       <Speakers/>
 
+      <div className="py-10"></div>
+
       <Sponsors/> 
 
+      <div className="py-10"></div>
+      <Footer/>
     </>
   );
 }

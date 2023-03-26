@@ -7,9 +7,6 @@ const Sponsors = () => {
       <section className="sponsorship">
         <Title
           title={"Sponsors"}
-          description={
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis atque illo eaque optio quasi. Omnis porro temporibus neque? Adipisci consequatur"
-          }
         />
 
         <div className="flex flex-wrap gap-5 max-w-6xl m-auto p-6 justify-around">

@@ -63,11 +63,19 @@ body {
 }
 
 .grey-img {
+  /* filter: brightness(0) invert(1); */
+  filter: grayscale(100%);
+}
+.white-img {
+  /* filter: brightness(0) invert(1); */
   filter: grayscale(100%);
 }
 
 .grey-img:hover {
-  filter: grayscale(0%);
+  filter: none;
+}
+.white-img:hover {
+  filter: none;
 }
 
 
