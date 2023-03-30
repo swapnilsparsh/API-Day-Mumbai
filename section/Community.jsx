@@ -5,7 +5,7 @@ const Community = () => {
   return (
     <>
       <section className="community">
-        <Title title={"Community Partner"} />
+        <Title title={"Community Partner"} community={true} />
 
         <div className="flex blur flex-wrap gap-5 max-w-6xl m-auto p-6 justify-around cursor-not-allowed pointer-events-none select-none">
           <Image

@@ -22,7 +22,7 @@ const OurTeam = () => {
         </div>
         <div className="flex flex-wrap justify-center">
           <Team name={"Kiran"} role={"Crew"} image={"/team/Kiran.webp"} />
-          <Team name={"Kushal"} role={"Crew"} image={"/team/Kushal.webp"} />
+          <Team name={"Khushal"} role={"Crew"} image={"/team/Kushal.webp"} />
           <Team name={"Manas"} role={"Crew"} image={"/team/Manas.webp"} />
           <Team name={"Manish"} role={"Crew"} image={"/team/Manish.webp"} />
           <Team name={"Pranit"} role={"Crew"} image={"/team/Pranit.webp"} />

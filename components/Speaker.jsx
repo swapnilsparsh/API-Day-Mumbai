@@ -6,21 +6,21 @@ const Speaker = ({ reverse }) => {
     <>
       <div
         className={`speaker blur-xl flex cursor-not-allowed pointer-events-none select-none ${
-          reverse ? "flex-row-reverse" : ""
-        } max-w-5xl m-auto my-10 max-md:flex-col`}
+          reverse ? "flex-row-reverse items-center" : ""
+        } max-w-5xl m-auto my-10 max-md:flex-col items-center`}
       >
         <div className="md:w-1/2 z-0 p-5">
           <Image
-            className="w-full z-0 grey-img"
+            className="w-full z-0 grey-img rounded-md"
             src={"/speaker/Ali-Mustafa.webp"}
-            width={1000}
-            height={1000}
+            width={300}
+            height={300}
             alt={"ali"}
           />
         </div>
 
         <div className="md:w-1/2 z-10 md:pl-14 p-5 flex justify-center flex-col">
-          <h3 className="md:-ml-28 z-50">Ali Mustafa</h3>
+          <h3 className="z-50">Ali Mustafa</h3>
           <br />
           <p className="uppercase font-semibold text-primary">
             Senior Developer Advocate

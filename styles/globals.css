@@ -89,7 +89,9 @@ body {
   filter: none;
 }
 
-
+.inherit {
+  width: inherit;
+}
 
 @keyframes t-rotate {
   0% {
