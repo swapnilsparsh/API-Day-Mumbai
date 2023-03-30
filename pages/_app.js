@@ -6,6 +6,7 @@ import AOS from 'aos';
 
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Navbar from '@/components/Navbar';
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -64,6 +65,7 @@ export default function App({ Component, pageProps }) {
         />
         <title>API Day 2023</title>
       </Head>
+      <Navbar/>
       <Component {...pageProps} />
       <Analytics />
     </>

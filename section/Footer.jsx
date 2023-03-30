@@ -19,6 +19,9 @@ const Footer = () => {
             <Link href={"/about"}>
               <p className="hover:text-primary">About Us</p>
             </Link>
+            <Link href={"/contact"}>
+              <p className="hover:text-primary my-2">Contact Us</p>
+            </Link>
           </div>
           <div className="about md:w-1/4 px-5">
             <p className="uppercase text-gray-500 my-5">Connect with us</p>

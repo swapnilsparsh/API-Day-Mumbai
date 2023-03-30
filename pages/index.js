@@ -40,9 +40,9 @@ export default function Home() {
 
   return (
     <>
-      {/* <div className={`${preloader ? "" : "hidden"}`}>
+      <div className={`${preloader ? "" : "hidden"}`}>
         <Preloader />
-      </div> */}
+      </div>
       <Hero/>
 
       <Speakers/>

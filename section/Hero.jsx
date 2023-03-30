@@ -2,7 +2,7 @@
 const Hero = () => {
   return (
     <>
-      <div className="h-screen bg-[url('/bg-stars.svg')]">
+      <div className="h-screen ">
         <div data-aos="fade-up"  className="flex flex-col justify-center text-left h-full max-w-6xl m-auto ">
           <p className=" md:text-3xl pb-5">API Conference 2023</p>
           <h1 className="gradient-text md:text-8xl text-8xl ">
