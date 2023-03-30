@@ -22,6 +22,14 @@ const Footer = () => {
             <Link href={"/contact"}>
               <p className="hover:text-primary my-2">Contact Us</p>
             </Link>
+            <a
+              target="_blank"
+              href={
+                "https://drive.google.com/file/d/1q2V10x5HZhFvSlt9M9KXmD7DIZDtr2sA/view"
+              }
+            >
+              <p className="hover:text-primary my-2">Code Of Conduct</p>
+            </a>
           </div>
           <div className="about md:w-1/4 px-5">
             <p className="uppercase text-gray-500 my-5">Connect with us</p>

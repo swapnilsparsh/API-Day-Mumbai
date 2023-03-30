@@ -1,11 +1,13 @@
+import Navbar from "@/components/Navbar";
 import Footer from "@/section/Footer";
 import React, { useRef } from "react";
 
 const Contact = () => {
   return (
     <>
+    <Navbar/>
       <div className="max-w-6xl m-auto">
-        <div className="h-[70vh] flex flex-col p-5 justify-center">
+        <div className="h-screen flex flex-col p-5 justify-center">
           <h4 className="my-5">Get In Touch</h4>
           <h1 className="gradient-text md:text-8xl montserrat text-5xl font-medium">
             Contact Us

@@ -12,6 +12,14 @@
   font-family: "Roboto Mono", monospace;
 }
 
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.poppins{
+  font-family: 'Poppins', sans-serif;
+}
+
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }

@@ -5,54 +5,37 @@ import Sponsors from "@/section/Sponsors";
 import Speakers from "@/section/Speakers";
 import Hero from "@/section/Hero";
 import Footer from "@/section/Footer";
+import Navbar from "@/components/Navbar";
 
-export default function Home() {
+export default function Home({ splash, setSplash }) {
   const [preloader, setPreloader] = useState(true);
-  const [email, setEmail] = useState("");
-
   useEffect(() => {
     setTimeout(() => {
       setPreloader(false);
+      setSplash(true);
     }, 3900);
   }, []);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log(email);
-    const url =
-      "https://postmanemailcollector-production.up.railway.app/submit";
-    try {
-      const response = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
-      if (response.status === 200) {
-        const data = await response.json();
-      } else {
-      }
-    } catch (err) {
-      console.log("something went wrong");
-    }
-  };
-
   return (
     <>
-      <div className={`${preloader ? "" : "hidden"}`}>
-        <Preloader />
-      </div>
-      <Hero/>
+      {!splash && (
+        <div className={`${preloader ? "" : "hidden"}`}>
+          <Preloader />
+        </div>
+      )}
 
-      <Speakers/>
+      <Navbar />
+
+      <Hero />
+
+      <Speakers />
 
       <div className="py-10"></div>
 
-      <Sponsors/> 
+      <Sponsors />
 
       <div className="py-10"></div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

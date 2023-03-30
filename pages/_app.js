@@ -5,10 +5,14 @@ import Head from 'next/head'
 import AOS from 'aos';
 
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 
 export default function App({ Component, pageProps }) {
+
+
+  const [splash, setSplash] = useState(false);
+
   useEffect(() => {
     AOS.init();
   }, [])
@@ -65,8 +69,8 @@ export default function App({ Component, pageProps }) {
         />
         <title>API Day 2023</title>
       </Head>
-      <Navbar/>
-      <Component {...pageProps} />
+      
+      <Component {...pageProps} splash={splash} setSplash={setSplash} />
       <Analytics />
     </>
   )
