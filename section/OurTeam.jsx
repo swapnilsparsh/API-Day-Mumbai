@@ -8,7 +8,7 @@ const OurTeam = () => {
         <h2 className="text-center">Our Team</h2>
         <div className="gradient-bg h-0.5 w-24 mt-3 mb-10 m-auto"></div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-around">
           <Team
             name={"Ali Mustafa"}
             role={"Organizer"}
@@ -20,7 +20,7 @@ const OurTeam = () => {
             image={"/team/Fardin.webp"}
           />
         </div>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-around">
           <Team name={"Kiran"} role={"Crew"} image={"/team/Kiran.webp"} />
           <Team name={"Khushal"} role={"Crew"} image={"/team/Kushal.webp"} />
           <Team name={"Manas"} role={"Crew"} image={"/team/Manas.webp"} />

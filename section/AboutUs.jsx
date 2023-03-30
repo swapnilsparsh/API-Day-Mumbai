@@ -6,10 +6,10 @@ const AboutUs = () => {
   return (
     <>
       <div className="max-w-6xl m-auto p-5">
-        <div className=" flex flex-col justify-center">
-          <h4 className="my-5">Get To Know Us</h4>
-          <h1 className="gradient-text md:text-8xl montserrat text-6xl font-medium">
-            About Us
+        <div className=" flex h-[60vh] flex-col justify-center">
+          <h4 className="my-5">Get To </h4>
+          <h1 className="gradient-text md:text-8xl montserrat text-7xl font-medium">
+          Know Us
           </h1>
         </div>
 

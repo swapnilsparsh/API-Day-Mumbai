@@ -4,7 +4,7 @@ import React from "react";
 const Team = ({ image, name, role, desc }) => {
   return (
     <>
-      <div className="flex flex-col items-center text-center md:w-1/4  my-10">
+      <div className="flex flex-col items-center text-center md:w-1/4 my-10">
         <Image
           className="rounded-full grey-img"
           src={image}

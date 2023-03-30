@@ -9,9 +9,9 @@ const Navbar = () => {
       <nav className="w-full p-5 z-50">
         <div className="flex md:w-3/4 m-auto justify-between items-center">
           <div className="logo">
-            {/* <Link href={"/"}>
+            <Link href={"/"}>
               <h4>API DAY 2023</h4>
-            </Link> */}
+            </Link>
           </div>
           <div
             className={`links flex md:flex-row flex-col md:relative right-0 bg-background bg-opacity-90 max-md:pt-32 gap-5 transition-all duration-500 ${
