@@ -34,31 +34,37 @@ const Footer = () => {
           <div className="about md:w-1/4 px-5">
             <p className="uppercase text-gray-500 my-5">Connect with us</p>
             <div className="flex gap-2 justify-center">
-              {/* <a href="#">
+              <a
+                href="https://www.instagram.com/apiday.mumbai/"
+                target="_blank"
+              >
                 <Image
                   className="white-img"
-                  src={"/icon/instagram.png"}
+                  src={"/icon/instagram.svg"}
                   width={40}
                   height={40}
-                  alt={"instagram"}
-                />
-              </a> */}
-              <a href="#">
-                <Image
-                  className="white-img"
-                  src={"/icon/linkedin.png"}
-                  width={40}
-                  height={40}
-                  alt={"instagram"}
+                  alt={"Instagram"}
                 />
               </a>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/company/api-day-mumbai/"
+                target="_blank"
+              >
                 <Image
                   className="white-img"
-                  src={"/icon/twitter.png"}
+                  src={"/icon/linkedin.svg"}
                   width={40}
                   height={40}
-                  alt={"instagram"}
+                  alt={"Linkedin"}
+                />
+              </a>
+              <a href="https://twitter.com/APIDayMumbai" target="_blank">
+                <Image
+                  className="white-img"
+                  src={"/icon/twitter.svg"}
+                  width={40}
+                  height={40}
+                  alt={"Twitter"}
                 />
               </a>
             </div>
