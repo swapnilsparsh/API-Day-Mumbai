@@ -4,11 +4,15 @@ import React from "react";
 const Speaker = ({ reverse }) => {
   return (
     <>
-      <div className={`speaker blur-xl flex ${reverse ? "flex-row-reverse": ""} max-w-5xl m-auto my-10 max-md:flex-col`}>
+      <div
+        className={`speaker blur-xl flex cursor-not-allowed pointer-events-none select-none ${
+          reverse ? "flex-row-reverse" : ""
+        } max-w-5xl m-auto my-10 max-md:flex-col`}
+      >
         <div className="md:w-1/2 z-0 p-5">
           <Image
             className="w-full z-0 grey-img"
-            src={"/ali-mustafa.jpg"}
+            src={"/speaker/Ali-Mustafa.webp"}
             width={1000}
             height={1000}
             alt={"ali"}
