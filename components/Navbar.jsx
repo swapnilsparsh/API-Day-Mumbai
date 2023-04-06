@@ -7,14 +7,14 @@ const Navbar = () => {
   return (
     <>
       <nav className="w-full p-5 z-50">
-        <div className="flex md:w-3/4 m-auto justify-between items-center">
-          <div className="logo">
+        <div className="flex md:w-3/4 m-auto justify-center items-center">
+          {/* <div className="logo">
             <Link href={"/"}>
               <h4>API DAY 2023</h4>
             </Link>
-          </div>
+          </div> */}
           <div
-            className={`links flex md:flex-row flex-col md:relative right-0 bg-background bg-opacity-90 max-md:pt-32 gap-5 transition-all duration-500 ${
+            className={`links flex md:flex-row flex-col md:relative right-0  bg-background bg-opacity-90 max-md:pt-32 gap-5 transition-all duration-500 ${
               toggle
                 ? "flex-col w-2/3 px-5 right-0 translate-x-0 items-end animate-fade fixed top-0 h-screen  "
                 : "items-center max-md:translate-x-full max-md:fixed top-0"
