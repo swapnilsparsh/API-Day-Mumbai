@@ -22,33 +22,33 @@ const AboutUs = () => {
           />
         </div>
         <br />
-        <Image src={"/meta.png"} className="m-auto" width={1000} height={700} />
 
-        <div className="flex md:flex-row flex-col gap-5 mt-10">
-          <div className="md:w-2/5">
-            <p className="text-primary">The Conference</p>
+        <div className="flex md:flex-row flex-col gap-5 mt-20">
+          <div className="md:w-2/4">
+            <p className="text-primary pb-10">The Conference</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam
+              sint debitis officiis itaque vero quo est, placeat repellat
+              incidunt necessitatibus vitae illo ex nisi corporis laborum dicta
+              mollitia assumenda.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam
+              sint debitis officiis itaque vero quo est, placeat repellat
+              incidunt necessitatibus vitae illo ex nisi corporis laborum dicta
+              mollitia assumenda.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam
+              sint debitis officiis itaque vero quo est, placeat repellat
+              incidunt necessitatibus vitae illo ex nisi corporis laborum dicta
+              mollitia assumenda.
+            </p>
           </div>
-          <div className="md:w-3/5">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam
-              sint debitis officiis itaque vero quo est, placeat repellat
-              incidunt necessitatibus vitae illo ex nisi corporis laborum dicta
-              mollitia assumenda.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam
-              sint debitis officiis itaque vero quo est, placeat repellat
-              incidunt necessitatibus vitae illo ex nisi corporis laborum dicta
-              mollitia assumenda.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam
-              sint debitis officiis itaque vero quo est, placeat repellat
-              incidunt necessitatibus vitae illo ex nisi corporis laborum dicta
-              mollitia assumenda.
-            </p>
+          <div className="md:w-2/4">
+        <Image src={"/meta.png"} className="m-auto " width={1000} height={700} />
           </div>
         </div>
       </div>

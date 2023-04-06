@@ -25,6 +25,10 @@ export default function Home({ splash, setSplash }) {
         </div>
       )}
 
+      {splash && 
+      <>
+
+
       <Navbar />
 
       <Hero />
@@ -41,6 +45,7 @@ export default function Home({ splash, setSplash }) {
 
       <div className="py-10"></div>
       <Footer />
+      </>}
     </>
   );
 }
