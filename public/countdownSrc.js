@@ -1,4 +1,4 @@
-const countToDate = 1680330600000;
+const countToDate = 1681065000000;
 let previousTimeBetweenDates
 setInterval(() => {
     const currentDate = new Date()

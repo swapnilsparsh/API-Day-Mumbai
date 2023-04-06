@@ -5,7 +5,7 @@ const CountDown = () => {
   const [days, setDays] = useState(0);
 
   const calculateTime = () => {
-    const dday = 1680330600000;
+    const dday = 1681065000000;
     const currentTime = Date.now();
 
     if (dday - currentTime < 0) return;
