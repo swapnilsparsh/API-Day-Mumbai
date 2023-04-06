@@ -6,8 +6,8 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-6xl h-[60vh] m-auto">
-        <div className="flex flex-col p-5 justify-center">
+      <div className="max-w-6xl  m-auto">
+        <div className="flex flex-col h-[60vh] p-5 justify-center">
           <h4 className="my-5">Get In Touch</h4>
           <h1 className="gradient-text md:text-8xl montserrat text-5xl font-medium">
             Contact Us
