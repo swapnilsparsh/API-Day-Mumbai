@@ -46,7 +46,7 @@ export default function Home() {
           <h1 className="gradient-text md:text-8xl montserrat text-4xl font-bold">
             API DAY 2023
           </h1>
-          <p className="md:text-4xl text-lg py-10">April 30th, Mumbai, India</p>
+          <p className="md:text-4xl text-lg py-10">May 6th, Mumbai, India</p>
         </div>
 
         <p className="text-center md:text-xl pb-3">Website live in </p>
