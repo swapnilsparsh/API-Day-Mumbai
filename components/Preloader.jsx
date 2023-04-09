@@ -6,7 +6,7 @@ const Preloader = () => {
       <div className="flex p-1">
         <div className="text-right flex flex-col justify-center">
           <h2 className="font-bold text-xl md:text-2xl font-robo">
-            API SUMMIT 2023
+            API DAY 2023
           </h2>
           <h2 className="font-semibold text-xl md:text-2xl italic font-robo">
             MUMBAI

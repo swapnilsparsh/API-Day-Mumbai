@@ -2,8 +2,20 @@ import '@/styles/globals.css'
 import '../public/countdown.css'
 import { Analytics } from '@vercel/analytics/react';
 import Head from 'next/head'
+import AOS from 'aos';
+
+import 'aos/dist/aos.css';
+import { useEffect, useState } from 'react';
+import Navbar from '@/components/Navbar';
 
 export default function App({ Component, pageProps }) {
+
+
+  const [splash, setSplash] = useState(false);
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
       <Head>
@@ -57,7 +69,8 @@ export default function App({ Component, pageProps }) {
         />
         <title>API Day 2023</title>
       </Head>
-      <Component {...pageProps} />
+      
+      <Component {...pageProps} splash={splash} setSplash={setSplash} />
       <Analytics />
     </>
   )

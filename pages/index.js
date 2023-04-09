@@ -2,82 +2,51 @@ import Preloader from "@/components/Preloader";
 import { useEffect, useState } from "react";
 import CountDown from "@/components/CountDown";
 import Sponsors from "@/section/Sponsors";
+import Speakers from "@/section/Speakers"
+import Community from "@/section/Community";
+import Hero from "@/section/Hero";
+import Footer from "@/section/Footer";
+import Navbar from "@/components/Navbar";
 
-export default function Home() {
+export default function Home({ splash, setSplash }) {
   const [preloader, setPreloader] = useState(true);
-  const [email, setEmail] = useState("");
-
   useEffect(() => {
     setTimeout(() => {
       setPreloader(false);
+      setSplash(true);
     }, 3900);
   }, []);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log(email);
-    const url =
-      "https://postmanemailcollector-production.up.railway.app/submit";
-    try {
-      const response = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
-      if (response.status === 200) {
-        const data = await response.json();
-      } else {
-      }
-    } catch (err) {
-      console.log("something went wrong");
-    }
-  };
-
   return (
     <>
-      <div className={`${preloader ? "" : "hidden"}`}>
-        <Preloader />
-      </div>
+      {!splash && (
+        <div className={`${preloader ? "" : "hidden"}`}>
+          <Preloader />
 
-      <div className="h-screen bg-[url('/bg-stars.svg')]">
-        <div className="text-center pt-40">
-          <h1 className="gradient-text md:text-8xl montserrat text-4xl font-bold">
-            API DAY 2023
-          </h1>
-          <p className="md:text-4xl text-lg py-10">May 6th, Mumbai, India</p>
         </div>
+      )}
 
-        <p className="text-center md:text-xl pb-3">Website live in </p>
-        <CountDown />
+      {splash && 
+      <>
 
-        <form
-          onSubmit={(e) => handleSubmit(e)}
-          className="max-w-2xl z-20 flex bg-white m-auto p-1 mx-3 md:m-auto rounded-full "
-        >
-          <input
-            required
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email"
-            className="w-3/5 outline-none p-2 ml-5  text-black"
-          />
-          <button
-            type="submit"
-            className="w-2/5 px-8 py-2 gradient-bg rounded-full "
-          >
-            Subscribe
-          </button>
-        </form>
 
-        <img src="/pattern-hills.svg" className="absolute -z-10 bottom-0 max-md:w- flex-1 w-full" alt="" />
+      <Navbar />
 
-      </div>
+      <Hero />
 
-      {/* <Sponsors/>  */}
+      <Speakers />
 
+      <div className="py-10"></div>
+
+      <Sponsors />
+
+      <div className="py-10"></div>
+
+      <Community />
+
+      <div className="py-10"></div>
+      <Footer />
+      </>}
     </>
   );
 }
