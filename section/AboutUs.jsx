@@ -9,7 +9,7 @@ const AboutUs = () => {
         <div className=" flex h-[60vh] flex-col justify-center">
           <h4 className="my-5">Get To </h4>
           <h1 className="gradient-text md:text-8xl montserrat text-7xl font-medium">
-          Know Us
+            Know Us
           </h1>
         </div>
 
@@ -25,30 +25,31 @@ const AboutUs = () => {
 
         <div className="flex md:flex-row flex-col gap-5 mt-20">
           <div className="md:w-2/4">
-            <p className="text-primary pb-10">The Conference</p>
+            <p className="text-primary pb-10">The Summit</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam
-              sint debitis officiis itaque vero quo est, placeat repellat
-              incidunt necessitatibus vitae illo ex nisi corporis laborum dicta
-              mollitia assumenda.
+              A gathering of professionals and tech enthusiasts will be held on
+              the 30th of April.
             </p>
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam
-              sint debitis officiis itaque vero quo est, placeat repellat
-              incidunt necessitatibus vitae illo ex nisi corporis laborum dicta
-              mollitia assumenda.
+              Mainly focusing on the latest trends in API technology as well its
+              integration with other well-known technology.
             </p>
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam
-              sint debitis officiis itaque vero quo est, placeat repellat
-              incidunt necessitatibus vitae illo ex nisi corporis laborum dicta
-              mollitia assumenda.
+              It will also be responsible for creating an environment where all
+              the like-minded personals come together and discuss various
+              topics, intern creating an opportunity for growth and networking.
             </p>
           </div>
           <div className="md:w-2/4">
-        <Image src={"/meta.png"} className="m-auto " width={1000} height={700} />
+            <Image
+              src={"/meta.png"}
+              className="m-auto "
+              width={1000}
+              height={700}
+              alt=""
+            />
           </div>
         </div>
       </div>

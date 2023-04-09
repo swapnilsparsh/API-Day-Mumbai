@@ -51,7 +51,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div
-            className="hamburger md:hidden mr-5"
+            className="hamburger md:hidden w-full flex flex-col items-end mr-5"
             onClick={() => setToggle(!toggle)}
           >
             <div className="line w-5 mb-1 rounded bg-white h-0.5"></div>
