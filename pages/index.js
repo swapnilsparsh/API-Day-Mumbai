@@ -22,6 +22,7 @@ export default function Home({ splash, setSplash }) {
       {!splash && (
         <div className={`${preloader ? "" : "hidden"}`}>
           <Preloader />
+
         </div>
       )}
 

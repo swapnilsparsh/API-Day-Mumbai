@@ -5,12 +5,12 @@ const CountDown = () => {
   const [days, setDays] = useState(0);
 
   const calculateTime = () => {
-    const dday = 1680114600000;
+
+    const dday = 1681065000000;
+
     const currentTime = Date.now();
 
     if (dday - currentTime < 0) return;
-
-    const time = new Date(dday - currentTime);
 
     let days = (dday - currentTime) / (1000 * 60 * 60 * 24);
     setDays(Math.floor(days));
