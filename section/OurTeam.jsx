@@ -18,7 +18,7 @@ const OurTeam = () => {
           <Team name={"Manas"} role={"Crew"} image={"/team/Manas.webp"} link={"http://manasnanivadekar.me/"} />
           <Team name={"Manish"} role={"Crew"} image={"/team/Manish.webp"} link={"https://www.linkedin.com/in/imanishbarnwal"} />
           <Team name={"Pranit"} role={"Crew"} image={"/team/Pranit.webp"} link={"http://pranitpatil.com/"} />
-          <Team name={"Pratik"} role={"Crew"} image={"/team/Pratik.webp"} />
+          <Team name={"Pratik"} role={"Crew"} image={"/team/Pratik.webp"} link={"https://www.linkedin.com/in/pratik-bhagat07"}/>
           <Team name={"Preethika"} role={"Crew"} image={"/team/Preethika.webp"} />
           <Team name={"Radhiya"} role={"Crew"} image={"/team/Radhaiya.webp"} link={"https://www.linkedin.com/in/radhaiya-kulkarni"}/>
           <Team name={"Rohan"} role={"Crew"} image={"/team/Rohan.webp"} link={"https://www.rohankulkarni.co/"}/>

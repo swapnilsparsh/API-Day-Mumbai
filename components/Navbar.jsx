@@ -6,8 +6,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full p-5 z-50">
-        <div className="flex md:w-3/4 m-auto justify-center items-center">
+      <nav className="z-50 w-full p-5">
+        <div className="flex items-center justify-center m-auto md:w-3/4">
           {/* <div className="logo">
             <Link href={"/"}>
               <h4>API DAY 2023</h4>
@@ -23,33 +23,33 @@ const Navbar = () => {
             {toggle && (
               <div
                 onClick={() => setToggle(false)}
-                className="absolute top-5 right-10 text-2xl md:hidden"
+                className="absolute text-2xl top-5 right-10 md:hidden"
               >
                 X
               </div>
             )}
 
             <Link href={"/"}>
-              <p className="md:mx-5 my-1 cursor-pointer hover:text-primary text-center">
+              <p className="my-1 text-center cursor-pointer md:mx-5 hover:text-primary">
                 Home
               </p>
             </Link>
             <Link href={"/about"}>
-              <p className="md:mx-5 my-1 cursor-pointer hover:text-primary text-center">
+              <p className="my-1 text-center cursor-pointer md:mx-5 hover:text-primary">
                 About Us
               </p>
             </Link>
             <Link href={"/contact"}>
-              <p className="md:mx-5 my-1 cursor-pointer hover:text-primary text-center">
+              <p className="my-1 text-center cursor-pointer md:mx-5 hover:text-primary">
                 Contact Us
               </p>
             </Link>
-              <p className="md:mx-5 my-1 bg-gray-600 px-5 py-2 transition-all duration-500 hover:bg-primary text-center rounded-md">
-                Get Tickets
-              </p>
+            <p className="px-5 py-2 my-1 text-center transition-all duration-500 bg-gray-600 rounded-md cursor-not-allowed md:mx-5 hover:bg-primary">
+              Get Tickets
+            </p>
           </div>
           <div
-            className="hamburger md:hidden w-full flex flex-col items-end mr-5"
+            className="flex flex-col items-end w-full mr-5 hamburger md:hidden"
             onClick={() => setToggle(!toggle)}
           >
             <div className="line w-5 mb-1 rounded bg-white h-0.5"></div>
