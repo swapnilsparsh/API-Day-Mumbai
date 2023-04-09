@@ -69,8 +69,11 @@ export default function App({ Component, pageProps }) {
         />
         <title>API Day 2023</title>
       </Head>
-      
+      <div className="bg-[url('/bg-stars.svg')] bg-opacity-50 bg-fixed ">
+
       <Component {...pageProps} splash={splash} setSplash={setSplash} />
+
+      </div>
       <Analytics />
     </>
   )
