@@ -2,23 +2,23 @@ const Hero = () => {
   return (
     <>
       <div className="h-[90vh] bg-[url('/bg-stars.svg')]">
-        {/* <div className="h-screen md:p-10 p-5"> */}
+        {/* <div className="h-screen p-5 md:p-10"> */}
         <div
           data-aos="fade-up"
-          className="flex flex-col justify-center text-left h-full max-w-6xl m-auto md:p-10 p-5"
+          className="flex flex-col justify-center h-full max-w-6xl p-5 m-auto text-left md:p-10"
         >
-          <p className=" md:text-3xl pb-5 montserrat italic font-semibold">
+          <p className="pb-5 italic font-semibold  md:text-3xl montserrat">
             Lets Summit
           </p>
-          <h1 className="gradient-text md:text-8xl text-6xl ">API DAY 2023</h1>
-          <p className="md:text-3xl text-lg py-10">May 6th, Mumbai, India</p>
-          <div className="px-8 py-4 bg-gray-600  transition-colors duration-300 hover:bg-primary text-white w-fit rounded-md">
+          <h1 className="text-6xl gradient-text md:text-8xl ">API DAY 2023</h1>
+          <p className="py-10 text-lg md:text-3xl">May 6th, Mumbai, India</p>
+          <div className="px-8 py-4 text-white transition-colors duration-300 bg-gray-600 rounded-md cursor-not-allowed hover:bg-primary w-fit">
             Get Tickets
           </div>
         </div>
         <img
           src="/pattern-hills.svg"
-          className="absolute -z-10 bottom-0 max-md:w- flex-1 w-full"
+          className="absolute bottom-0 flex-1 w-full -z-10 max-md:w-"
           alt=""
         />
 
