@@ -12,9 +12,9 @@ const Hero = () => {
           </p>
           <h1 className="gradient-text md:text-8xl text-6xl ">API DAY 2023</h1>
           <p className="md:text-3xl text-lg py-10">May 6th, Mumbai, India</p>
-          <button className="px-8 py-4 bg-gray-600  transition-colors duration-300 hover:bg-primary text-white w-fit rounded-md">
+          <div className="px-8 py-4 bg-gray-600  transition-colors duration-300 hover:bg-primary text-white w-fit rounded-md">
             Get Tickets
-          </button>
+          </div>
         </div>
         <img
           src="/pattern-hills.svg"
