@@ -44,11 +44,9 @@ const Navbar = () => {
                 Contact Us
               </p>
             </Link>
-            <Link href={"/contact"}>
-              <p className="md:mx-5 my-1 cursor-pointer bg-gray-600 px-5 py-2 transition-all duration-500 hover:bg-primary text-center rounded-md">
+              <p className="md:mx-5 my-1 bg-gray-600 px-5 py-2 transition-all duration-500 hover:bg-primary text-center rounded-md">
                 Get Tickets
               </p>
-            </Link>
           </div>
           <div
             className="hamburger md:hidden w-full flex flex-col items-end mr-5"
