@@ -5,21 +5,21 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="md:p-20 p-10 bg-zinc-900">
-        <div className="flex max-md:flex-col max-md:gap-10 m-auto justify-center text-center">
-          <div className="about md:w-1/4 px-5">
-            <p className="uppercase text-gray-500 my-5">About Event</p>
+      <div className="p-10 md:p-20 bg-zinc-900">
+        <div className="flex justify-center m-auto text-center max-md:flex-col max-md:gap-10">
+          <div className="px-5 about md:w-1/4">
+            <p className="my-5 text-gray-500 uppercase">About Event</p>
             <p>
               A gathering of professionals and tech enthusiasts on 6th of May.
             </p>
           </div>
-          <div className="about md:w-1/4 px-5">
-            <p className="uppercase text-gray-500 my-5">Quick links</p>
+          <div className="px-5 about md:w-1/4">
+            <p className="my-5 text-gray-500 uppercase">Quick links</p>
             <Link href={"/about"}>
               <p className="hover:text-primary">About Us</p>
             </Link>
             <Link href={"/contact"}>
-              <p className="hover:text-primary my-2">Contact Us</p>
+              <p className="my-2 hover:text-primary">Contact Us</p>
             </Link>
             <a
               target="_blank"
@@ -27,12 +27,12 @@ const Footer = () => {
                 "https://drive.google.com/file/d/1q2V10x5HZhFvSlt9M9KXmD7DIZDtr2sA/view"
               }
             >
-              <p className="hover:text-primary my-2">Code Of Conduct</p>
+              <p className="my-2 hover:text-primary">Code Of Conduct</p>
             </a>
           </div>
-          <div className="about md:w-1/4 px-5">
-            <p className="uppercase text-gray-500 my-5">Connect with us</p>
-            <div className="flex gap-2 justify-center">
+          <div className="px-5 about md:w-1/4">
+            <p className="my-5 text-gray-500 uppercase">Connect with us</p>
+            <div className="flex justify-center gap-2">
               <a
                 href="https://www.instagram.com/apiday.mumbai/"
                 target="_blank"
@@ -45,7 +45,7 @@ const Footer = () => {
                   alt={"Instagram"}
                 />
               </a>
-              <a
+              {/* <a
                 href="https://www.linkedin.com/company/api-day-mumbai/"
                 target="_blank"
               >
@@ -56,7 +56,7 @@ const Footer = () => {
                   height={40}
                   alt={"Linkedin"}
                 />
-              </a>
+              </a> */}
               <a href="https://twitter.com/APIDayMumbai" target="_blank">
                 <Image
                   className="white-img"
