@@ -16,9 +16,7 @@ const AboutUs = () => {
         <div className="-m-5">
           <Title
             title={"Welcome To \n The SUMMIT"}
-            description={
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae odio distinctio pariatur fugit magni, soluta maxime a. Porro ipsum voluptates voluptas ipsa nemo, consectetur tempore esse et optio consequatur sequi!"
-            }
+            
           />
         </div>
         <br />
@@ -44,9 +42,9 @@ const AboutUs = () => {
           </div>
           <div className="md:w-2/4">
             <Image
-              src={"/meta.png"}
+              src={"/coming-soon.png"}
               className="m-auto "
-              width={1000}
+              width={700}
               height={700}
               alt=""
             />
