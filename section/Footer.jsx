@@ -10,8 +10,7 @@ const Footer = () => {
           <div className="about md:w-1/4 px-5">
             <p className="uppercase text-gray-500 my-5">About Event</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              obcaecati quibusdam nam quidem totam quis?
+              A gathering of professionals and tech enthusiasts on 6th of May.
             </p>
           </div>
           <div className="about md:w-1/4 px-5">

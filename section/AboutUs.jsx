@@ -21,12 +21,13 @@ const AboutUs = () => {
         </div>
         <br />
 
-        <div className="flex md:flex-row flex-col gap-5 mt-20">
+        <div className="flex md:flex-row flex-col gap-5 mt-10">
           <div className="md:w-2/4">
+            <br /><br />
             <p className="text-primary pb-10">The Summit</p>
             <p>
               A gathering of professionals and tech enthusiasts will be held on
-              the 30th of April.
+              the 6th of May.
             </p>
             <br />
             <p>
@@ -43,7 +44,7 @@ const AboutUs = () => {
           <div className="md:w-2/4">
             <Image
               src={"/coming-soon.png"}
-              className="m-auto "
+              className="m-auto md:px-10"
               width={700}
               height={700}
               alt=""
