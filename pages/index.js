@@ -7,6 +7,7 @@ import Community from "@/section/Community";
 import Hero from "@/section/Hero";
 import Footer from "@/section/Footer";
 import Navbar from "@/components/Navbar";
+import Programs from "@/section/Programs";
 
 export default function Home({ splash, setSplash }) {
   const [preloader, setPreloader] = useState(true);
@@ -34,12 +35,15 @@ export default function Home({ splash, setSplash }) {
 
       <Hero />
 
+      <div className="py-10"></div>
       <Speakers />
 
       <div className="py-10"></div>
 
       <Sponsors />
 
+      <div className="py-10"></div>
+      <Programs/>
       <div className="py-10"></div>
 
       <Community />
