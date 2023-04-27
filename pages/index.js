@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import CountDown from "@/components/CountDown";
 import Sponsors from "@/section/Sponsors";
 import Speakers from "@/section/Speakers"
-import Community from "@/section/Community";
+import Community from "@/section/CommunityPartner";
 import Hero from "@/section/Hero";
 import Footer from "@/section/Footer";
 import Navbar from "@/components/Navbar";
@@ -27,30 +27,30 @@ export default function Home({ splash, setSplash }) {
         </div>
       )}
 
-      {splash && 
-      <>
+      {splash &&
+        <>
 
 
-      <Navbar />
+          <Navbar />
 
-      <Hero />
+          <Hero />
 
       <div className="py-10"></div>
       <Speakers />
 
-      <div className="py-10"></div>
+          <div className="py-10"></div>
 
-      <Sponsors />
-
-      <div className="py-10"></div>
-      <Programs/>
-      <div className="py-10"></div>
-
-      <Community />
+          <Sponsors />
 
       <div className="py-10"></div>
-      <Footer />
-      </>}
+      {/* <Programs/>
+      <div className="py-10"></div> */}
+
+          <Community />
+
+          <div className="py-10"></div>
+          <Footer />
+        </>}
     </>
   );
 }
