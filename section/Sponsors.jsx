@@ -35,7 +35,7 @@ const Sponsors = () => {
             <br />
             <Image
               className=" max-md:p-5 md:w-1/4 md:mb-10 m"
-              src={"/sponsor/Github-logo.png"}
+              src={"/sponsor/GitHub-logo.png"}
               width={500}
               height={500}
               alt={"sponsors logo"}
