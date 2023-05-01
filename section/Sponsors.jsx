@@ -23,7 +23,7 @@ const Sponsors = () => {
             <h4 className="">Gold Sponsor</h4>
             <br />
             <Image
-              className=" max-md:p-5 md:w-1/2 md:mb-10 m"
+              className=" max-md:p-5 md:w-2/3 md:mb-10 m"
               src={"/sponsor/elastic.svg"}
               width={500}
               height={500}
@@ -34,7 +34,7 @@ const Sponsors = () => {
             <br />
             <h4 className="">Base Sponsor</h4>
             <Image
-              className=" max-md:p-5 md:w-1/2 md:mb-10 m"
+              className=" max-md:p-5 md:w-2/3 md:mb-10 m"
               src={"/sponsor/github.png"}
               width={500}
               height={500}
