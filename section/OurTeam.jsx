@@ -13,6 +13,7 @@ const OurTeam = () => {
           <Team name={"Fardin"} role={"Organizer"} image={"/team/Fardin.webp"} link={"https://twitter.com/etrnlnite"} />
         </div>
         <div className="flex flex-wrap justify-around">
+          <Team name={"Dhiraj"} role={"Crew"} image={"/team/dhiraj.png"} link={"https://twitter.com/cdhiraj40"} />
           <Team name={"Kiran"} role={"Crew"} image={"/team/Kiran.webp"} link={"https://www.linkedin.com/in/kiran-lavhale"} />
           <Team name={"Khushal"} role={"Crew"} image={"/team/Kushal.webp"} link={"https://linktr.ee/khushal20?utm_source=linktree_admin_share"}/>
           <Team name={"Manas"} role={"Crew"} image={"/team/Manas.webp"} link={"http://manasnanivadekar.me/"} />
@@ -22,6 +23,7 @@ const OurTeam = () => {
           <Team name={"Preethika"} role={"Crew"} image={"/team/Preethika.webp"} />
           <Team name={"Radhiya"} role={"Crew"} image={"/team/Radhaiya.webp"} link={"https://www.linkedin.com/in/radhaiya-kulkarni"}/>
           <Team name={"Rohan"} role={"Crew"} image={"/team/Rohan.webp"} link={"https://www.rohankulkarni.co/"}/>
+          <Team name={"Saif"} role={"Crew"} image={"/team/saif.jpg"} link={"https://twitter.com/SaifSaifee_dev"}/>
           <Team name={"Swapnil"} role={"Crew"} image={"/team/Swapnil.webp"} link={"https://swapnilsparsh.github.io/"}/>
           <Team name={"Wilfred"} role={"Crew"} image={"/team/Wilfred.webp"} link={"https://twitter.com/WilfredAlmeida_"}/>
         </div>
