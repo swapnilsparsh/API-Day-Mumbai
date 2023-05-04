@@ -13,7 +13,7 @@ const Hero = () => {
             Lets Summit
           </p>
           <h1 className="text-6xl gradient-text md:text-8xl ">API DAY 2023</h1>
-          <p className="py-10 text-lg md:text-3xl">May 6th, Mumbai, India</p>
+          <p className="py-10 text-lg md:text-3xl">Mumbai, India</p>
           <Link
             href={
               "https://www.eventbrite.com/e/api-day-mumbai-2k23-tickets-618376058437"
