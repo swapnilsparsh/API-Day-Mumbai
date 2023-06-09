@@ -4,21 +4,21 @@ const Preloader = () => {
   return (
     <div className="bg-background fixed !z-50 w-screen h-screen flex justify-center items-center">
       <div className="flex p-1">
-        <div className="text-right flex flex-col justify-center">
-          <h2 className="font-bold text-xl md:text-2xl font-robo">
+        <div className="flex flex-col justify-center text-right">
+          <h2 className="text-xl font-bold md:text-2xl font-robo">
             API DAY 2023
           </h2>
-          <h2 className="font-semibold text-xl md:text-2xl italic font-robo">
+          <h2 className="text-xl italic font-semibold md:text-2xl font-robo">
             MUMBAI
           </h2>
-          {/* <p className=" font-robo">6 May 2023</p> */}
+          <p className=" font-robo">16 June 2023</p>
         </div>
-        <div className="h-auto mx-5 w-1 bg-white"></div>
+        <div className="w-1 h-auto mx-5 bg-white"></div>
 
-        <div className="words max-h-28 overflow-hidden  ">
-          <div className="block text-rotate h-full max-md:text-xl text-2xl px-2 ">
+        <div className="overflow-hidden words max-h-28 ">
+          <div className="block h-full px-2 text-2xl text-rotate max-md:text-xl ">
             <div className="flex items-center h-full font-bold text-white ">
-              <p className="p-3 bg-primary italic uppercase -skew-x-12 font-robo">
+              <p className="p-3 italic uppercase -skew-x-12 bg-primary font-robo">
                 {" "}
                 Lets Summit!
               </p>
@@ -37,9 +37,9 @@ export default Preloader;
 
 const ChangingText = ({ text }) => {
   return (
-    <div className="block text-rotate h-full max-md:text-xl text-2xl ">
+    <div className="block h-full text-2xl text-rotate max-md:text-xl ">
       <div className="flex items-center h-full font-bold text-white ">
-        <p className="p-2 font-robo italic uppercase -skew-x-12"> {text}</p>
+        <p className="p-2 italic uppercase -skew-x-12 font-robo"> {text}</p>
       </div>
     </div>
   );

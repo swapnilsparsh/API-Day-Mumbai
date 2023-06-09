@@ -10,7 +10,8 @@ const Footer = () => {
           <div className="px-5 about md:w-1/4">
             <p className="my-5 text-gray-500 uppercase">About Event</p>
             <p>
-              A gathering of professionals and tech enthusiasts <br />
+              A gathering of professionals and tech enthusiasts on 16th of June.{" "}
+              <br />
               Build | Network | Grow
             </p>
           </div>

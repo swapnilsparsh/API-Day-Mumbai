@@ -44,11 +44,11 @@ const Navbar = () => {
                 Contact Us
               </p>
             </Link>
-            <Link href = {"https://www.eventbrite.com/e/api-day-mumbai-2k23-tickets-618376058437"}>
-            <p className="px-5 py-2 my-1 text-center transition-all duration-500 bg-gray-600 rounded-md md:mx-5 hover:bg-primary">
+            {/* <Link href = {"https://www.eventbrite.com/e/api-day-mumbai-2k23-tickets-618376058437"}> */}
+            <p className="px-5 py-2 my-1 text-center transition-all duration-500 bg-gray-600 rounded-md cursor-not-allowed md:mx-5 hover:bg-primary">
               Get Tickets
             </p>
-            </Link>
+            {/* </Link> */}
           </div>
           <div
             className="flex flex-col items-end w-full mr-5 hamburger md:hidden"
