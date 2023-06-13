@@ -25,6 +25,24 @@ const Speakers = () => {
             "I am Aanchal Mishra. Communities have a very special place in my heart because I am passionate about helping students rise above the bar of the college curriculum. I love helping and creating opportunities for them via community events, giving talks, and providing mentorship."
           }
         />
+        <Speaker
+          reverse={false}
+          image={"/speaker/ashish.jpeg"}
+          name={"Ashish Tiwari"}
+          designetion={"Senior Developer Advocate, Elastic"}
+          desc={
+            "Started journey with Software Engineer. Throughout the journey, I got the opportunity to work with great minds on various stacks, databases & programming languages. Worked with various types of use cases and contributed to solutions. I am an Open Source fan & Love to contribute to the community. I like to speak about tech."
+          }
+        />
+        <Speaker
+          reverse={true}
+          image={"/speaker/romin-irani.jpeg"}
+          name={"Romin Irani"}
+          designetion={"Developer Advocate, Google Cloud"}
+          desc={
+            "My passion is to help developers succeed. I enjoy learning, writing and talking about technologies that matter to developers."
+          }
+        />
       </section>
     </>
   );
