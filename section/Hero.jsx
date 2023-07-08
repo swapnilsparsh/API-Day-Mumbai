@@ -9,19 +9,21 @@ const Hero = () => {
           data-aos="fade-up"
           className="flex flex-col justify-center h-full max-w-6xl p-5 m-auto text-left md:p-10"
         >
-          <p className="pb-5 italic font-semibold md:text-3xl montserrat">
+          {/* <p className="pb-5 italic font-semibold md:text-3xl montserrat">
             Lets Summit
-          </p>
-          <h1 className="text-6xl gradient-text md:text-8xl ">API DAY 2023</h1>
-          <p className="py-10 text-lg md:text-3xl">June 16th, Mumbai, India</p>
+          </p> */}
+          <h1 className="text-6xl text-center gradient-text md:text-8xl ">
+            COMING SOON
+          </h1>
+          {/* <p className="py-10 text-lg md:text-3xl">June 16th, Mumbai, India</p> */}
           {/* <Link
             href={
               "https://www.eventbrite.com/e/api-day-mumbai-2k23-tickets-618376058437"
             }
           > */}
-          <div className="px-8 py-4 text-white transition-colors duration-300 bg-gray-600 rounded-md cursor-not-allowed hover:bg-primary w-fit">
+          {/* <div className="px-8 py-4 text-white transition-colors duration-300 bg-gray-600 rounded-md cursor-not-allowed hover:bg-primary w-fit">
             Get Tickets
-          </div>
+          </div> */}
           {/* </Link> */}
         </div>
         <img
