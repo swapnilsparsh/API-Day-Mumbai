@@ -10,45 +10,45 @@ import Navbar from "@/components/Navbar";
 import Programs from "@/section/Programs";
 
 export default function Home({ splash, setSplash }) {
-  // const [preloader, setPreloader] = useState(true);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setPreloader(false);
-  //     setSplash(true);
-  //   }, 3900);
-  // }, []);
+  const [preloader, setPreloader] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setPreloader(false);
+      setSplash(true);
+    }, 3900);
+  }, []);
 
   return (
     <>
-      {/* {!splash && (
+      {!splash && (
         <div className={`${preloader ? "" : "hidden"}`}>
           <Preloader />
         </div>
-      )} */}
+      )}
 
-      {/* {splash && ( */}
-      <>
-        {/* <Navbar /> */}
+      {splash && (
+        <>
+          <Navbar />
 
-        <Hero />
+          <Hero />
 
-        {/* <div className="py-10"></div> */}
-        {/* <Speakers /> */}
+          <div className="py-10"></div>
+          <Speakers />
 
-        {/* <div className="py-10"></div> */}
+          <div className="py-10"></div>
 
-        {/* <Sponsors /> */}
+          <Sponsors />
 
-        {/* <div className="py-10"></div> */}
-        {/* <Programs/>
-      <div className="py-10"></div> */}
+          <div className="py-10"></div>
+          <Programs />
+          <div className="py-10"></div>
 
-        {/* <Community /> */}
+          <Community />
 
-        {/* <div className="py-10"></div> */}
-        {/* <Footer /> */}
-      </>
-      {/* )} */}
+          <div className="py-10"></div>
+          <Footer />
+        </>
+      )}
     </>
   );
 }
